@@ -1,4 +1,4 @@
-from pipe_and_filter.pipe_and_filter.core.sink import Sink
+from pipe_and_filter.core.sink import Sink
 
 class LoggerSink(Sink):
 
