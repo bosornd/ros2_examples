@@ -1,4 +1,4 @@
-from pipe_and_filter.source import Source
+from pipe_and_filter.pipe_and_filter.core.source import Source
 from random import randint
 
 class RandomSource(Source):
