@@ -19,9 +19,9 @@ class Source(Node):
 
     def timer_callback(self):
         out = Int64()
-        out.data = self.generate_number()
-        self.output_publisher.publish(out)
-
         out.data = time.time_ns()
         self.time_publisher.publish(out)
+
+        out.data = self.generate_number()
+        self.output_publisher.publish(out)
 
