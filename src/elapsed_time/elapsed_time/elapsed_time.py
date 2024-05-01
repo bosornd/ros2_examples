@@ -4,11 +4,11 @@ from std_msgs.msg import Int64
 class ElapsedTime(Node):
     @staticmethod
     def get_source_time_topic():
-        'source_time'
+        return 'source_time'
 
     @staticmethod
     def get_sink_time_topic():
-        'sink_time'
+        return 'sink_time'
 
     def __init__(self, name='elapsed_time', **args):
         super().__init__(name, **args)
